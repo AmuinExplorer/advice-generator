@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" onreadystatechange="show()">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <title>Frontend Mentor | Advice generator app</title>
+  <link rel="stylesheet" href="output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;800&display=swap" rel="stylesheet">
+</head>
+<body class="flex justify-center items-center bg-DarkBlue relative" onload="load()">
+
+  <div class="container flex justify-center items-center">
+
+    <div class="content-container relative bg-DarkGrayishBlue md:w-1/2 mx-4 rounded-lg">
+      <div class="p-4">
+        <!-- Advice number -->
+      <div id="advice-number">
+        <span class="block text-NeonGreen text-center font-['Manrope'] font-extralight advice-number">
+          Advice #117
+        </span>
+      </div>
+      <!-- Advice Contents -->
+      <div id="advice-content">
+        <p class="pt-5 text-center text-LightCyan font-['Manrope'] font-extrabold advice-content ad">
+          "
+          It is easy to sit up and take notice, what's dificult 
+          is getting up and taking action.
+          "
+        </p>
+      </div>
+      <!-- Divider -->
+      <div class="divider flex justify-center items-center pb-5 pt-2">
+        <img class="text-LightCyan md:hidden" src="images/pattern-divider-mobile.svg" alt="pattern divider mobile">
+        <img class="hidden md:block" src="/images/pattern-divider-desktop.svg" alt="">
+      </div>
+      <!-- Icon dice -->
+    <div class="icon-dice fixed">
+      <div onclick="random()" class="rounded-full bg-NeonGreen w-fit hover:bg-pink-700 transition duration-500 hover:cursor-pointer">
+        <img class="p-2" src="images/icon-dice.svg" alt="icon dice">
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
